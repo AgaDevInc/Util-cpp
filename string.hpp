@@ -1,6 +1,9 @@
+#ifndef AGA_Util_String
+#define AGA_Util_String
+
 #include <iostream>
 #include <string>
-namespace AGA::Util
+namespace AGA::Util::String
 {
   std::string removeCharStart(const std::string &str, char c)
   {
@@ -13,3 +16,4 @@ namespace AGA::Util
     return lastPositionNoChar == std::string::npos ? "" : str.substr(0, lastPositionNoChar + 1);
   };
 } // namespace AGA::Util
+#endif

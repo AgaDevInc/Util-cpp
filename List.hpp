@@ -1,3 +1,5 @@
+#ifndef AGA_Util_List
+#define AGA_Util_List
 namespace AGA::Util
 {
     template <typename Data>
@@ -73,9 +75,10 @@ namespace AGA::Util
       elements[index] = item;
       return old;
     }
-    length() const
+    size_t length() const
     {
       return size;
     }
   };
 } // namespace AGA::Util
+#endif
